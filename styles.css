@@ -55,17 +55,18 @@ section {
 }
 
 #cards {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
-  display: inline-block;
   width: 250px;
   margin: 20px;
   padding: 15px;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -75,7 +76,8 @@ section {
 
 .card img {
   width: 100%;
-  border-radius: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .card h3 {
